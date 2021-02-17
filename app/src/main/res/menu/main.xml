@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/save"
+        android:title="Save"
+        app:showAsAction="always|withText"
+        android:orderInCategory="1"
+        />
+    <item
+        android:id="@+id/image"
+        android:title="Image"
+        app:showAsAction="always|withText"
+        android:orderInCategory="1"
+        />
+    <item
+        android:id="@+id/clear"
+        app:showAsAction="never"
+        android:title="Clear" />
+
+    <item android:id="@+id/eraser"
+        android:title="Eraser"
+        android:orderInCategory="2"/>
+
+    <group android:id="@+id/group"
+        android:checkableBehavior="single">
+        <item android:id="@+id/tiny"
+            android:title="Tiny"
+            android:checked="true"/>
+        <item android:id="@+id/normal"
+            android:title="Normal"/>
+        <item android:id="@+id/wide"
+            android:title="Wide"/>
+    </group>
+    <group android:id="@+id/figures"
+        android:checkableBehavior="single">
+        <item android:id="@+id/line"
+            android:title="line"
+            android:checked="true"/>
+        <item android:id="@+id/circle"
+            android:title="circle"/>
+        <item android:id="@+id/square"
+            android:title="square"/>
+    </group>
+</menu>
